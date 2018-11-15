@@ -14,7 +14,7 @@ html
     font-size: 1rem;
     font-family: Arial, sans-serif;
     }
-	
+	@import url('https://fonts.googleapis.com/css?family=Spicy+Rice:400,700%27');
 	body 
 	{
 		background-image: url("../img/background.png");
@@ -48,7 +48,7 @@ html
         background-size: cover;
         font-size: 5rem;
         text-align: center;		
-        font-family:Arial, serif;
+        font-family:'Spicy Rice', serif;
         color: #ffffff;
         padding-top: 100px;
         padding-bottom: 100px;
@@ -148,7 +148,9 @@ html
 		padding: 0;
 		overflow: hidden;	
         text-align:center;
-	}
+        
+    }
+    
 	
 	li
 	{
@@ -157,7 +159,7 @@ html
 		line-height: 10px;	
 		
 	}
-	
+    
 	li a 
 	{
 		display: block;
@@ -169,9 +171,8 @@ html
         text-transform:uppercase;
 		
 	}
-	
-	li a:hover {
-		color: #2699FB
+    li a:hover {
+		color: #000000;
 	}
 	
 	/*image inside the article */	
