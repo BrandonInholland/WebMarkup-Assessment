@@ -5,16 +5,19 @@
     border: 0;
     box-sizing: border-box;
 }
+
+ 
+/*common elements on each page */
 html 
 	{
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: Arial, sans-serif;
     }
 	
 	body 
 	{
-		background-image: url("../img/background.jpeg");
+		background-image: url("../img/background.png");
 		background-repeat: no-repeat;
         width: 1080px;
         margin: auto;
@@ -22,33 +25,74 @@ html
         
         
 	}
-	
-	h1 
-	{
-		background-image: url("../img/companylogoBG.jpg");
+	video /* makes the video run in the background  */
+    {
+        display: block;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        font-size: 3rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        width: auto;
+        max-width: 100%;
+        z-index: -1;
+    }
+	h1 
+	{
+        
+        background-image: url("../img/companylogoBG.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 7rem;
         text-align: center;		
-        font-family: Arial, sans-serif;
+        font-family:Arial, serif;
         color: #ffffff;
         padding-top: 100px;
         padding-bottom: 100px;
         
         
-	}
+        
+    }
+    h1 a
+    {
+        display: block;
+		color: #ffffff;
+		text-align: center;
+		padding: 50px;
+        text-decoration: none;
+        text-transform:uppercase;
+        -webkit-text-stroke: 2px black;
+    }
 	
 	h2
 	{
 		box-sizing: border-box;
-		font-size: 50px;
+		font-size: 4.2rem;
 		font-family: Arial, sans-serif;
 		background: #2699FB;
         color: #ffffff;
         text-align: center;
         text-transform:uppercase;
-	}
-	
+        width: 100%;
+        padding: 1%;
+       
+    }
+      h5
+      {
+        box-sizing: border-box;
+		font-size: 4.2rem;
+		font-family: Arial, sans-serif;
+		background: #2699FB;
+        color: #ffffff;
+        text-align: center;
+        text-transform:uppercase;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
 	h3
 	{
 		display: block;
@@ -58,15 +102,29 @@ html
         text-decoration: none;
         text-transform:uppercase;
 		
-	}
-	
+    }
+    /*for contact page */
+    h4
+    {
+        color: #aaaaaa;
+        padding: 16px;
+        font-size: 1.25rem;
+        font-family: arial,sans-serif;
+        
+    }
+
+    h6
+    {
+        display: none;
+    }
+    /*continuing on common elements */
 	nav
 	{
         display: flex;
         justify-content:center;
         width:100%;
         background-color: #707070;
-        font-size: 30px;
+        font-size: 1.50rem;
 	}
 	
 	ul
@@ -104,7 +162,7 @@ html
 	}
 	
 	/*image inside the article */	
-	article>img
+	article img
 	{
         display:block;
         height: auto;
@@ -112,7 +170,30 @@ html
         
         text-align:center;
 	}	
-	
+    /*flex box for index*/
+    .indexflex
+    {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        ;
+        
+    }
+    .indexflex article
+    {
+        background-size: cover;
+        background-position: center;
+        
+        flex:100%;
+        max-width: 100%;
+        height: auto;
+              
+        
+        
+    }
+
+
 	footer
 	{
 		list-style-type: none;
@@ -150,81 +231,303 @@ html
 
 .flex-container a:nth-of-type(1)
 {
-    background-image: url(../img/product1.jpg);
+    background-image: url(../img/product1.png);
     
 }
 .flex-container a:nth-of-type(2)
 {
-    background-image: url(../img/product2.jpg);
+    background-image: url(../img/product2.png);
     
 }
 .flex-container a:nth-of-type(3)
 {
-    background-image: url(../img/product3.jpg);
+    background-image: url(../img/product3.png);
     
 }
 .flex-container a:nth-of-type(4)
 {
-    background-image: url(../img/product4.jpg);
+    background-image: url(../img/product4.png);
     
 }
 .flex-container a:nth-of-type(5)
 {
-    background-image: url(../img/product5.jpg);
+    background-image: url(../img/product5.png);
     
 }
 .flex-container a:nth-of-type(6)
 {
-    background-image: url(../img/product6.jpg);
+    background-image: url(../img/product6.png);
     
 }
 .flex-container a:nth-of-type(7)
 {
-    background-image: url(../img/product7.jpg);
+    background-image: url(../img/product7.png);
     
 }
 .flex-container a:nth-of-type(8)
 {
-    background-image: url(../img/product8.jpg);
+    background-image: url(../img/product8.png);
     
 }
 .flex-container a:nth-of-type(9)
 {
-    background-image: url(../img/product9.jpg);
+    background-image: url(../img/product9.png);
     
 }
 .flex-container a:nth-of-type(10)
 {
-    background-image: url(../img/product10.jpg);
+    background-image: url(../img/product10.png);
     
 }
 .flex-container a:nth-of-type(11)
 {
-    background-image: url(../img/product11.jpg);
+    background-image: url(../img/product11.png);
     
 }
 .flex-container a:nth-of-type(12)
 {
-    background-image: url(../img/product12.jpg);
+    background-image: url(../img/product12.png);
     
 }
 
-/*tablet*/
-@media screen and (min-width: 361px)
+/*contact page*/
+
+form
 {
-    .flex-container a {
-        flex:50%;
+    display: block;
+    background-color: #f5f5f5;
+    padding: 50px;
+    margin: 0;
+}
+
+.topicbox
+{
+
+    background-color: #ffffff;
+    color: #aaaaaa;
+    padding: 15px;
+    border: 0.5px solid #aaaaaa;
+    font-family: arial,sans-serif;
+}
+
+
+input{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;    
+    border: 0.5px solid #aaaaaa;
+    color: #aaaaaa;
+}
+
+select
+{
+    background-color: #ffffff;
+    color: #000000;
+    border: 0.5px solid #aaaaaa;    
+    float: right;
+    width: 60%;
+
+}
+
+.submit 
+{
+    background-color: #2699FB;
+    color: #ffffff;
+    padding: 10px;
+}
+textarea
+{
+    background: #ffffff;
+    width: 100%;
+    resize: vertical;
+    border: 0.5px solid #aaaaaa;
+    color: #aaaaaa;
+    font-family: arial,sans-serif;
+}
+
+
+
+
+
+/* mobile */     /* when it goes to mobile it removes the unnessacary things  */
+@media screen and (max-width:360px)
+{
+    .indexflex .bluebox2
+    {
+        display: none;
+    }
+    .indexflex .bluebox3
+    {
+        display: none;
+    }
+    .indexflex .bluebox4
+    {
+        display:none;
+    }
+
+    .indexflex
+    {
+        display: flex;
+        flex-wrap: wrap;        
+    }
+    .indexflex article
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    article img
+    {
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .flex-container a
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    form
+    {
+        width: auto;
+    }
+    
+   select
+   {
+       float:none;
+       width: 100%;
+   }
+
+   h4
+   {
+       display: none;
+   }
+
+}
+
+
+
+
+/*tablet*/
+@media screen and (min-width: 360px) and (max-width: 960px)
+{
+   
+    .bluebox2
+    {
+        display: none;
+    }
+
+    .bluebox3
+    {
+        display: none;
+    }
+
+    .indexflex .photo3
+    {
+        display: none;
+    }
+
+    .indexflex
+    {
+        
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;       
+    }
+    .indexflex article
+    {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 300px;
+        flex: 50%;
+        max-width: 100%;
+        
+    }
+
+    article img
+    {
+        
+        max-width: 100%;
+        height: 100%;
+        border: 5px solid #707070;
+    }
+    .indexflex .article4
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .flex-container a
+    {
+        flex: 50%;
         max-width: 50%;
     }
+    .contact
+    {
+        display: none;
+    }
+    h4
+    {
+        display: none;
+    }
+    
+    select
+   {
+       float:none;
+       width: 100%;
+   }
+   fieldset
+   {
+       max-width: 100%;
+
+   }
+    
+
+
 }
 
 /*desktop*/
-@media screen and (min-width: 961px)
+@media screen and (min-width: 960px)
 {
-    .flex-container a 
+    .indexflex
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .flex-container a
     {
         flex: 33%;
         max-width: 33%;
+    }
+    body
+    {
+        background-image: none;
+    }    
+    .bluebox1
+    {
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+    .bluebox2
+    {
+        padding-right: 30%;
+        padding-left: 30%;
+    }
+    .bluebox3
+    {
+        padding-right: 30%;
+        padding-left: 30%;
+    }
+    .bluebox4
+    {
+        padding-right: 30%;
+        padding-left: 30%;
     }
 }
 

@@ -1,0 +1,5 @@
+Sitemap: http://www.bjlpalmer.nl/sitemap.xml
+
+user-agent:* 
+
+Disallow: /inholland
