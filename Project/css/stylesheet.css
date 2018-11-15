@@ -1,4 +1,6 @@
-/*common elements*/
+ @import url('https://fonts.googleapis.com/css?family=Spicy+Rice:400,700%27');
+ 
+ /*common elements*/
 * {
     padding: 0;
     margin: 0;
@@ -6,15 +8,15 @@
     box-sizing: border-box;
 }
 
- 
+
 /*common elements on each page */
 html 
 	{
     box-sizing: border-box;
     font-size: 1rem;
-    font-family: Arial, sans-serif;
+    font-family: 'Spicy Rice', serif;
     }
-	@import url('https://fonts.googleapis.com/css?family=Spicy+Rice:400,700%27');
+	            
 	body 
 	{
 		background-image: url("../img/background.png");
@@ -64,14 +66,14 @@ html
 		padding: 15px;
         text-decoration: none;
         text-transform:uppercase;
-        -webkit-text-stroke: 2px black;
+        
     }
 	
 	h2
 	{
 		box-sizing: border-box;
 		font-size: 4.2rem;
-		font-family: Arial, sans-serif;
+		font-family: 'Spicy Rice', serif;
 		background: #2699FB;
         color: #ffffff;
         text-align: center;
@@ -84,7 +86,7 @@ html
       {
         box-sizing: border-box;
 		font-size: 4.2rem;
-		font-family: Arial, sans-serif;
+		font-family: 'Spicy Rice', serif;
 		background: #2699FB;
         color: #ffffff;
         text-align: center;
@@ -98,7 +100,7 @@ html
       {
         box-sizing: border-box;
 		font-size: 4.2rem;
-		font-family: Arial, sans-serif;
+		font-family: 'Spicy Rice', serif;
 		background: #2699FB;
         color: #ffffff;
         text-align: center;
@@ -122,7 +124,7 @@ html
         color: #aaaaaa;
         padding: 16px;
         font-size: 1.25rem;
-        font-family: arial,sans-serif;
+        font-family: 'Spicy Rice', serif;
         
     }
 
@@ -321,7 +323,7 @@ form
     color: #aaaaaa;
     padding: 15px;
     border: 0.5px solid #aaaaaa;
-    font-family: arial,sans-serif;
+    font-family: 'Spicy Rice', serif;
 }
 
 
@@ -357,7 +359,7 @@ textarea
     resize: vertical;
     border: 0.5px solid #aaaaaa;
     color: #aaaaaa;
-    font-family: arial,sans-serif;
+    font-family: 'Spicy Rice', serif;
 }
 
 
