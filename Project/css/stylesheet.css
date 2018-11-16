@@ -1,4 +1,8 @@
- @import url('https://fonts.googleapis.com/css?family=Spicy+Rice:400,700%27');
+ @font-face 
+    {
+    font-family: "Pacifico";
+    src: url(..//Fonts/Pacifico-Regular.ttf);
+    }
  
  /*common elements*/
 * {
@@ -14,7 +18,7 @@ html
 	{
     box-sizing: border-box;
     font-size: 1rem;
-    font-family: 'Spicy Rice', serif;
+    font-family: "arial",serif,'Times New Roman', Times, serif;
     }
 	            
 	body 
@@ -50,7 +54,7 @@ html
         background-size: cover;
         font-size: 5rem;
         text-align: center;		
-        font-family:'Spicy Rice', serif;
+        font-family:'Pacifico', serif;
         color: #ffffff;
         padding-top: 100px;
         padding-bottom: 100px;
@@ -59,7 +63,7 @@ html
         
         
     }
-    h1 a
+    h1>a
     {
         display: block;
 		color: #ffffff;
@@ -74,7 +78,7 @@ html
 	{
 		box-sizing: border-box;
 		font-size: 4.2rem;
-		font-family: 'Spicy Rice', serif;
+		font-family: "arial",serif,'Times New Roman', Times, serif;
 		background: #2699FB;
         color: #ffffff;
         text-align: center;
@@ -87,7 +91,7 @@ html
       {
         box-sizing: border-box;
 		font-size: 4.2rem;
-		font-family: 'Spicy Rice', serif;
+		font-family: "arial",serif,'Times New Roman', Times, serif;;
 		background: #2699FB;
         color: #ffffff;
         text-align: center;
@@ -101,7 +105,7 @@ html
       {
         box-sizing: border-box;
 		font-size: 4.2rem;
-		font-family: 'Spicy Rice', serif;
+		font-family: "arial",serif,'Times New Roman', Times, serif;;
 		background: #2699FB;
         color: #ffffff;
         text-align: center;
@@ -125,7 +129,7 @@ html
         color: #aaaaaa;
         padding: 16px;
         font-size: 1.25rem;
-        font-family: 'Spicy Rice', serif;
+        font-family: "arial",serif,'Times New Roman', Times, serif;;
         
     }
 
@@ -193,10 +197,10 @@ html
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        ;
+        
         
     }
-    .indexflex article
+    #indexflex>article
     {
         background-size: cover;
         background-position: center;
@@ -245,68 +249,56 @@ html
 
     
 
-.flex-container a:nth-of-type(1)
-{
-    background-image: url(../img/product1.png);
-    
-}
-.flex-container a:nth-of-type(2)
-{
-    background-image: url(../img/product2.png);
-    
-}
-.flex-container a:nth-of-type(3)
-{
-    background-image: url(../img/product3.png);
-    
-}
-.flex-container a:nth-of-type(4)
-{
-    background-image: url(../img/product4.png);
-    
-}
-.flex-container a:nth-of-type(5)
-{
-    background-image: url(../img/product5.png);
-    
-}
-.flex-container a:nth-of-type(6)
-{
-    background-image: url(../img/product6.png);
-    
-}
-.flex-container a:nth-of-type(7)
-{
-    background-image: url(../img/product7.png);
-    
-}
-.flex-container a:nth-of-type(8)
-{
-    background-image: url(../img/product8.png);
-    
-}
-.flex-container a:nth-of-type(9)
-{
-    background-image: url(../img/product9.png);
-    
-}
-.flex-container a:nth-of-type(10)
-{
-    background-image: url(../img/product10.png);
-    
-}
-.flex-container a:nth-of-type(11)
-{
-    background-image: url(../img/product11.png);
-    
-}
-.flex-container a:nth-of-type(12)
-{
-    background-image: url(../img/product12.png);
-    
-}
+    .flex-container a:nth-of-type(1)
+    {
+        background-image: url(../img/product1.png);
+    }
+    .flex-container a:nth-of-type(2)
+    {
+        background-image: url(../img/product2.png);
+    }
+    .flex-container a:nth-of-type(3)
+    {
+        background-image: url(../img/product3.png);
+    }
+    .flex-container a:nth-of-type(4)
+    {
+        background-image: url(../img/product4.png);
+    }
+    .flex-container a:nth-of-type(5)
+    {
+        background-image: url(../img/product5.png);
+    }
+    .flex-container a:nth-of-type(6)
+    {
+        background-image: url(../img/product6.png);
+    }
+    .flex-container a:nth-of-type(7)
+    {
+        background-image: url(../img/product7.png);
+    }
+    .flex-container a:nth-of-type(8)
+    {
+        background-image: url(../img/product8.png);
+    }
+    .flex-container a:nth-of-type(9)
+    {
+        background-image: url(../img/product9.png);
+    }
+    .flex-container a:nth-of-type(10)
+    {
+        background-image: url(../img/product10.png);
+    }
+    .flex-container a:nth-of-type(11)
+    {
+        background-image: url(../img/product11.png);        
+    }
+    .flex-container a:nth-of-type(12)
+    {
+        background-image: url(../img/product12.png);
+    }
 
-/*contact page*/
+/*//////////////////////////////////////////////////////////////////contact page//////////////////////////////////////////////////////////////////////*/
 
 form
 {
@@ -359,14 +351,14 @@ textarea
     resize: vertical;
     border: 0.5px solid #aaaaaa;
     color: #aaaaaa;
-    font-family: 'Spicy Rice', serif;
+    font-family: "ariel",'Times New Roman', Times, serif;;
 }
 
 
 
 
 
-/* mobile */     /* when it goes to mobile it removes the unnessacary things  */
+/*//////////////////////////////////////////////////////////////// mobile */     /* when it goes to mobile it removes the unnessacary things  /////////////////////////////////////////*/
 @media screen and (max-width:360px)
 {
     .indexflex .bluebox2
@@ -469,7 +461,7 @@ textarea
 
 
 
-/*tablet*/
+/*//////////////////////////////////////////////////////////////////////////////////////////tablet////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 361px) and (max-width: 960px)
 {
    body
@@ -595,7 +587,7 @@ textarea
    
 }
 
-/*desktop*/
+/*////////////////////////////////////////////////////////////////////////////desktop//////////////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 961px)and (max-width: 2560px)
 {
     .indexflex
